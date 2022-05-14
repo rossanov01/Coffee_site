@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background: url(https://всеокофе.рф/assets/images/header-bg.jpg) no-repeat center top;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    background-size: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    border-bottom: 13px solid #ffd26e;
+    .top {
+        display: flex;
+        .top-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 14px;
+            h1 {
+                color: #ffe7be;
+                font-size: 40px;
+                line-height: 1em;
+                padding-bottom: 6px;
+                font-weight: bold;
+                font-family: Verdana, Geneva, sans-serif;
+            }
+            span {
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 14px;
+                color: #ffd26e;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        .top-links {
+            display: flex;
+            padding: 0 15px 10px 12px;
+            margin-left: 70px;
+            a {
+                display: flex;
+                height: 33px;
+                width: 50px;
+                list-style-type: none;
+                flex-direction: row;
+                justify-content: center;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            a:hover {
+                background-color: rgb(221, 114, 13);
+                border-radius: 8px;
+            }
+        }
+    }
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .dropbtn {
+                background-color: rgba(2, 2, 2, 0);
+                padding: 16px 40px;
+                border: none;
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #ffe7be;
+                cursor: pointer;
+                line-height: 25px;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                min-width: 100%;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                border-radius: 10px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .dropdown-content p {
+                background-color: rgba(29, 6, 6, 1);
+                padding: 6px 0px;
+                text-decoration: none;
+                display: block;
+                border: 2px solid #ffe7be;
+                border-radius: 10px;
+                font-weight: bold;
+                color: #fff;
+                font-size: 18px;
+                line-height: 25px;
+            }
+            .dropdown-content a {
+                background-color: rgba(29, 6, 6, 1);
+                color: #ffe7be;
+                padding: 6px 0px;
+                text-decoration: none;
+                display: block;
+                border: 2px solid #ffe7be;
+                border-radius: 10px;
+            }
+
+            .dropdown-content a:hover {
+                background-color: rgb(197, 103, 27);
+                border-radius: 10px;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: rgb(197, 103, 27);
+            }
+        }
+    }
+}
+
+main {
+    background-image: url(https://static.actu.fr/uploads/2017/01/NESPRESSO-1.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    .main-content {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 40px;
+        .main-content-info {
+            background-color: rgba(29, 6, 6, 0.75);
+            border: 2px solid silver;
+            border-radius: 12px;
+            color: #fff0d7;
+            padding: 15px 30px;
+            font-size: 20px;
+            h2 {
+                font-size: 32px;
+                color: #ffffff;
+            }
+            h3 {
+                padding: 12px 0px 5px 0px;
+                color: #ffffff;
+                font-size: 28px;
+            }
+            p {
+                padding: 12px 0;
+            }
+            p .img-right {
+                float: right;
+                padding-left: 10px;
+            }
+            p .img-left {
+                float: left;
+                padding-right: 10px;
+            }
+            .center-image {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .main-content-info-contacts {
+                float: right;
+                a {
+                    padding: 0px 2px;
+                }
+                img {
+                    width: 50px;
+                }
+                img:hover {
+                    filter: grayscale(70%);
+                    -webkit-filter: grayscale(70%);
+                }
+            }
+        }
+        .main-content-nav {
+            border-radius: 12px;
+            color: #fff0d7;
+            min-width: 25%;
+            padding: 15px 30px;
+            font-size: 20px;
+            h3 {
+                padding: 12px 0px 5px 0px;
+                color: #ffffff;
+                font-size: 28px;
+                text-align: left;
+            }
+            img {
+                padding-top: 20px;
+                width: 100%;
+                filter: brightness(20);
+            }
+            ul {
+                margin-top: 20px;
+            }
+            a {
+                text-decoration: none;
+                list-style-type: none;
+                text-align: left;
+                color: #fff0d7;
+            }
+            li {
+                padding-bottom: 20px;
+            }
+            a:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 12px solid #ffd26e;
+    background-color: #5c2e14;
+    min-height: 100px;
+    color: #ffd26e;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: #ffffff;
+    }
+    a:hover {
+        color: #a55f5f;
+    }
+}
